@@ -1,20 +1,14 @@
+using Dependencies;
 using UnityEngine;
 
-namespace Assets.Scripts
+public class CoreContext : MonoBehaviour
 {
-    public class CoreContext : MonoBehaviour
+    private void Awake()
     {
-        [SerializeField] private Test2 _test2;
-        
-        
-        private void Awake()
-        {
-            var container = new DiContainer();
-            
-            container.Bind<Test1>();
-            container.Bind(_test2);
+        var container = new DiContainer();
 
-            container.InjectAll();
-        }
+        container.InjectAll();
     }
+    
+    
 }

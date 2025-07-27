@@ -102,3 +102,6 @@ InitTestScene*.unity*
 .idea/
 *.sln
 *.csproj
+
+# MacOS
+.DS_Store

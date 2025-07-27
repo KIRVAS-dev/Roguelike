@@ -1,13 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace Assets.Scripts
+public class Bootstrap : MonoBehaviour
 {
-    public class Bootstrap : MonoBehaviour
+    private void Awake()
     {
-        private void Awake()
-        {
-            SceneManager.LoadScene("Core");
-        }
+        SceneManager.LoadScene("Core");
     }
 }
